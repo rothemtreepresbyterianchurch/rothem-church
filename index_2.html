@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="pageTitle">브리즈번 로뎀나무장로교회</title>
+<meta id="pageDescription" name="description" content="하나님의 임재를 경험하는 예배를 갈망합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+<script>
+/* ══════════════════════════════════════════════════════════════════
+   ✏️  여기서부터 아래 "설정 끝" 표시까지만 수정하시면 됩니다.
+       규칙 3가지만 지켜주세요.
+       1) 따옴표 " " 안의 글자만 바꿉니다. 따옴표는 지우지 마세요.
+       2) 줄 끝의 쉼표 , 는 그대로 둡니다.
+       3) 비워두고 싶으면 ""  처럼 안을 비우면 그 항목이 사라집니다.
+   ══════════════════════════════════════════════════════════════════ */
+
+const 설정 = {
+
+  /* ── 1. 교회 기본 정보 ───────────────────────────────── */
+  교회이름: "브리즈번 로뎀나무장로교회",
+  영문이름: "Brisbane Rothem Tree Church",
+  한줄소개: "하나님의 임재를 경험하는 예배를 갈망합니다.",
+
+  /* 검색결과소개: 구글/카카오 등에서 검색했을 때 제목 아래 표시되는 한 줄 설명입니다.
+     보통 위 "한줄소개"와 같은 내용을 쓰시면 됩니다. */
+  검색결과소개: "하나님의 임재를 경험하는 예배를 갈망합니다. 브리즈번 로뎀나무장로교회 예배안내, 주보, 오시는 길.",
+
+  /* 로고 이미지: 파일을 이 index.html과 같은 폴더에 올리고 파일명을 적으세요.
+     예) "logo.png"  /  로고를 안 쓰려면 "" 로 비워두세요. */
+  로고파일: "logo.png",
+
+
+  /* ── 2. 예배 안내 ────────────────────────────────────
+     한 줄이 예배 하나입니다. 줄을 통째로 복사해 추가하거나 지우면 됩니다. */
+  예배안내: [
+    { 이름: "주일예배",     시간: "주일 오전 11:00", 장소: "본당" },
+    { 이름: "주일학교",     시간: "주일 오전 11:00", 장소: "교육관" },
+    { 이름: "수요기도회",   시간: "수요일 오후 7:30", 장소: "본당" },
+    { 이름: "새벽기도회",   시간: "화–토 오전 6:00", 장소: "본당" },
+  ],
+
+
+  /* ── 3. 주보 (매주 여기만 한 줄 추가하면 됩니다) ────────
+     ① PDF 파일을 bulletins 폴더에 올린다
+     ② 아래 목록 맨 위에 한 줄 추가한다  ← 끝!
+     날짜는 "2026-08-23" 형식으로 적어주세요. 최신 것이 맨 위입니다. */
+  주보: [
+    { 날짜: "2026-08-23", 제목: "8월 넷째 주 주보", 파일: "bulletins/2026-08-23.pdf" },
+    { 날짜: "2026-08-16", 제목: "8월 셋째 주 주보", 파일: "bulletins/2026-08-16.pdf" },
+    { 날짜: "2026-08-09", 제목: "8월 둘째 주 주보", 파일: "bulletins/2026-08-09.pdf" },
+  ],
+
+
+  /* ── 4. 섬기는 사람들 ────────────────────────────────
+     사진 없이 이름·직분·담당만 표시됩니다. 줄 단위로 추가/삭제하세요. */
+  섬기는사람들: [
+    { 이름: "김진광", 직분: "담임목사", 담당: "말씀 · 예배 · 심방" },
+    { 이름: "홍길동", 직분: "장로",     담당: "재정 · 행정" },
+    { 이름: "홍길동", 직분: "권사",     담당: "새가족 · 친교" },
+    { 이름: "홍길동", 직분: "집사",     담당: "찬양팀" },
+    { 이름: "홍길동", 직분: "집사",     담당: "주일학교" },
+    { 이름: "홍길동", 직분: "집사",     담당: "하이스쿨" },
+  ],
+
+
+  /* ── 5. 오시는 길 ────────────────────────────────────
+     주소만 바꾸면 아래 지도도 자동으로 따라 바뀝니다. */
+  주소: "Shop 10/3360 Pacific Highway, Springwood QLD 4127",
+  주차안내: "건물 앞 주차장을 무료로 이용하실 수 있습니다.",
+
+
+  /* ── 6. 연락처 & SNS ─────────────────────────────────
+     쓰지 않는 항목은 "" 로 비우면 화면에서 사라집니다. */
+  전화: "0466 808 133",
+  전화안내: "김진광 담임목사",
+  이메일: "rothemtreechurch1004@gmail.com",
+
+  유튜브: "https://www.youtube.com/@BrisbaneRothemTreeChurch",
+  인스타그램: "https://www.instagram.com/rothemtree_church/",
+  페이스북: "https://www.facebook.com/profile.php?id=61558778182929",
+
+};
+
+/* ══════════════ 설정 끝 — 아래는 손대지 않으셔도 됩니다 ══════════════ */
+</script>
+
+<style>
+:root{
+  --ink:#12211C;
+  --pine:#1A302A;
+  --moss:#4A6B55;
+  --broom:#D9A62E;
+  --paper:#F2F4EF;
+  --paper-2:#FFFFFF;
+  --stone:#697069;
+  --line:rgba(18,33,28,.12);
+  --shadow:0 1px 2px rgba(18,33,28,.05), 0 12px 32px -18px rgba(18,33,28,.35);
+  --display:"Gowun Batang", serif;
+  --body:"Pretendard Variable", Pretendard, -apple-system, system-ui, sans-serif;
+  --wrap:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:72px}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--body); font-size:17px; line-height:1.75;
+  -webkit-font-smoothing:antialiased; word-break:keep-all;
+}
+img{max-width:100%; display:block}
+a{color:inherit}
+.wrap{width:100%; max-width:var(--wrap); margin:0 auto; padding:0 24px}
+
+/* ── 상단 고정 바 ── */
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:rgba(242,244,239,.86); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex; align-items:center; gap:24px; height:64px}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0}
+.brand img{height:30px; width:auto}
+.brand span{font-family:var(--display); font-weight:700; font-size:17px; letter-spacing:-.01em}
+.nav{margin-left:auto; display:flex; gap:6px; overflow-x:auto; scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  text-decoration:none; font-size:14.5px; color:var(--stone);
+  padding:7px 12px; border-radius:999px; white-space:nowrap;
+  transition:background .2s, color .2s;
+}
+.nav a:hover{color:var(--ink); background:rgba(74,107,85,.1)}
+
+/* ── 히어로 ── */
+.hero{
+  background:var(--pine); color:var(--paper);
+  padding:clamp(72px,13vw,132px) 0 clamp(64px,10vw,104px);
+  position:relative; overflow:hidden;
+}
+.hero::after{
+  content:""; position:absolute; inset:auto 0 0 0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--broom),transparent); opacity:.5;
+}
+.hero-logo{height:64px; width:auto; margin-bottom:32px}
+.eyebrow{
+  font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--broom); margin:0 0 18px;
+}
+.hero h1{
+  font-family:var(--display); font-weight:700;
+  font-size:clamp(30px,5.6vw,52px); line-height:1.35; letter-spacing:-.02em;
+  margin:0 0 20px; max-width:16em;
+}
+.hero p.lead{
+  font-size:clamp(16px,2.2vw,19px); color:rgba(242,244,239,.72);
+  margin:0 0 40px; max-width:34em;
+}
+.cta-row{display:flex; flex-wrap:wrap; gap:12px}
+.btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:13px 24px; border-radius:999px; text-decoration:none;
+  font-size:15px; font-weight:600; border:1px solid transparent;
+  transition:transform .18s, background .2s, border-color .2s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-solid{background:var(--broom); color:var(--ink)}
+.btn-ghost{border-color:rgba(242,244,239,.35); color:var(--paper)}
+.btn-ghost:hover{border-color:var(--broom); background:rgba(217,166,46,.12)}
+
+/* ── 섹션 공통 ── */
+.section{padding:clamp(64px,9vw,104px) 0; border-top:1px solid var(--line)}
+.section:first-of-type{border-top:none}
+.sec-head{margin:0 0 40px}
+.leaf{display:inline-block; vertical-align:-2px; margin-right:10px}
+.sec-head h2{
+  font-family:var(--display); font-weight:700;
+  font-size:clamp(24px,3.6vw,33px); letter-spacing:-.02em; margin:0;
+}
+.sec-head p{color:var(--stone); font-size:15.5px; margin:10px 0 0}
+
+/* ── 예배 안내 ── */
+.worship{list-style:none; margin:0; padding:0; border-top:1px solid var(--line)}
+.worship li{
+  display:grid; grid-template-columns:minmax(120px,1.1fr) 1.6fr auto;
+  gap:16px; align-items:baseline;
+  padding:20px 4px; border-bottom:1px solid var(--line);
+}
+.worship .w-name{font-family:var(--display); font-weight:700; font-size:19px}
+.worship .w-time{color:var(--ink); font-size:16px}
+.worship .w-place{color:var(--stone); font-size:14px}
+
+/* ── 주보 ── */
+.latest{
+  display:grid; grid-template-columns:1fr auto; gap:28px; align-items:center;
+  background:var(--paper-2); border:1px solid var(--line); border-left:4px solid var(--broom);
+  border-radius:4px; padding:32px; box-shadow:var(--shadow); margin-bottom:36px;
+}
+.latest .tag{font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--moss); margin:0 0 10px}
+.latest h3{font-family:var(--display); font-weight:700; font-size:clamp(21px,3vw,27px); margin:0 0 6px}
+.latest .date{color:var(--stone); font-size:15px; margin:0}
+.btn-pdf{background:var(--pine); color:var(--paper); flex-shrink:0}
+.btn-pdf:hover{background:var(--moss)}
+.archive{list-style:none; margin:0; padding:0}
+.archive li{border-bottom:1px solid var(--line)}
+.archive a{
+  display:flex; align-items:center; gap:16px; padding:16px 4px;
+  text-decoration:none; transition:padding-left .2s, background .2s;
+}
+.archive a:hover{padding-left:12px; background:rgba(74,107,85,.06)}
+.archive .a-date{
+  font-variant-numeric:tabular-nums; font-size:14.5px; color:var(--moss);
+  min-width:104px; letter-spacing:.02em;
+}
+.archive .a-title{font-size:16px; flex:1}
+.archive .a-go{font-size:13px; color:var(--stone)}
+.empty{color:var(--stone); font-size:15px; padding:24px 0}
+
+/* ── 섬기는 사람들 ── */
+.people{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line)}
+.person{background:var(--paper); padding:26px 22px}
+.person .p-role{font-size:12px; letter-spacing:.16em; color:var(--broom); text-transform:uppercase; margin:0 0 8px}
+.person .p-name{font-family:var(--display); font-weight:700; font-size:21px; margin:0 0 6px}
+.person .p-duty{color:var(--stone); font-size:14.5px; margin:0}
+
+/* ── 오시는 길 ── */
+.visit{display:grid; grid-template-columns:1fr 1.15fr; gap:36px; align-items:start}
+.info-block{margin:0 0 26px}
+.info-block dt{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--moss); margin-bottom:8px}
+.info-block dd{margin:0; font-size:16.5px}
+.info-block dd a{text-decoration:none; border-bottom:1px solid var(--broom); padding-bottom:1px}
+.map{border:1px solid var(--line); border-radius:4px; overflow:hidden; box-shadow:var(--shadow); background:var(--paper-2)}
+.map iframe{width:100%; height:400px; border:0; display:block; filter:saturate(.85)}
+
+/* ── 푸터 ── */
+.foot{background:var(--pine); color:rgba(242,244,239,.72); padding:64px 0 40px; font-size:14.5px}
+.foot img{height:34px; margin-bottom:22px; opacity:.95}
+.foot .f-name{font-family:var(--display); font-weight:700; color:var(--paper); font-size:19px; margin:0 0 8px}
+.foot p{margin:0 0 6px}
+.foot a{color:inherit; text-decoration:none}
+.foot a:hover{color:var(--broom)}
+.social{display:flex; gap:10px; margin:28px 0 32px; flex-wrap:wrap}
+.social a{
+  display:inline-flex; align-items:center; gap:7px;
+  border:1px solid rgba(242,244,239,.24); border-radius:999px;
+  padding:9px 16px; font-size:14px; transition:border-color .2s, background .2s;
+}
+.social a:hover{border-color:var(--broom); background:rgba(217,166,46,.1); color:var(--paper)}
+.copy{border-top:1px solid rgba(242,244,239,.16); padding-top:22px; font-size:13px; color:rgba(242,244,239,.5)}
+
+/* ── 접근성 · 모션 ── */
+a:focus-visible, button:focus-visible{outline:2px solid var(--broom); outline-offset:3px; border-radius:4px}
+.reveal{opacity:0; transform:translateY(14px)}
+.reveal.in{opacity:1; transform:none; transition:opacity .7s ease, transform .7s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal,.reveal.in{opacity:1; transform:none; transition:none}
+  .btn:hover,.archive a:hover{transform:none; padding-left:4px}
+}
+@media (max-width:820px){
+  .visit{grid-template-columns:1fr}
+  .latest{grid-template-columns:1fr; align-items:start; padding:26px}
+  .worship li{grid-template-columns:1fr; gap:4px; padding:16px 4px}
+  .nav a{padding:7px 9px; font-size:13.5px}
+  .brand span{display:none}
+  .archive .a-date{min-width:92px; font-size:13.5px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <img id="brandLogo" alt="" hidden>
+      <span id="brandName"></span>
+    </a>
+    <nav class="nav">
+      <a href="#worship">예배안내</a>
+      <a href="#bulletin">주보</a>
+      <a href="#people">섬기는 사람들</a>
+      <a href="#visit">오시는 길</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <img class="hero-logo" id="heroLogo" alt="" hidden>
+      <p class="eyebrow" id="heroEyebrow"></p>
+      <h1 id="heroTitle"></h1>
+      <p class="lead" id="heroLead"></p>
+      <div class="cta-row" id="heroCta"></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="worship">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><svg class="leaf" width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M7 0C2.5 4 0 7.5 0 11a7 7 0 0 0 14 0C14 7.5 11.5 4 7 0z" fill="#D9A62E"/></svg>예배 안내</h2>
+        <p>누구든지 오셔서 함께 예배드릴 수 있습니다.</p>
+      </div>
+      <ul class="worship" id="worshipList"></ul>
+    </div>
+  </section>
+
+  <section class="section reveal" id="bulletin">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><svg class="leaf" width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M7 0C2.5 4 0 7.5 0 11a7 7 0 0 0 14 0C14 7.5 11.5 4 7 0z" fill="#D9A62E"/></svg>주보</h2>
+        <p>매주 주보를 PDF로 보실 수 있습니다.</p>
+      </div>
+      <div id="latestSlot"></div>
+      <ul class="archive" id="archiveList"></ul>
+    </div>
+  </section>
+
+  <section class="section reveal" id="people">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><svg class="leaf" width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M7 0C2.5 4 0 7.5 0 11a7 7 0 0 0 14 0C14 7.5 11.5 4 7 0z" fill="#D9A62E"/></svg>섬기는 사람들</h2>
+        <p>각자의 자리에서 함께 교회를 세워갑니다.</p>
+      </div>
+      <div class="people" id="peopleGrid"></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2><svg class="leaf" width="14" height="18" viewBox="0 0 14 18" aria-hidden="true"><path d="M7 0C2.5 4 0 7.5 0 11a7 7 0 0 0 14 0C14 7.5 11.5 4 7 0z" fill="#D9A62E"/></svg>오시는 길</h2>
+        <p>처음 오시는 분은 편하게 연락 주세요.</p>
+      </div>
+      <div class="visit">
+        <div id="visitInfo"></div>
+        <div class="map"><iframe id="mapFrame" loading="lazy" title="교회 위치 지도" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img id="footLogo" alt="" hidden>
+    <p class="f-name" id="footName"></p>
+    <p id="footTagline"></p>
+    <div id="footContact" style="margin-top:18px"></div>
+    <div class="social" id="socialRow"></div>
+    <p class="copy" id="footCopy"></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const S = 설정;
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  document.title = S.교회이름;
+  if (S.검색결과소개) $("pageDescription").setAttribute("content", S.검색결과소개);
+
+  /* 로고 */
+  if (S.로고파일) {
+    ["brandLogo","heroLogo","footLogo"].forEach(id=>{
+      const el = $(id);
+      el.src = S.로고파일; el.alt = S.교회이름; el.hidden = false;
+      el.onerror = () => { el.hidden = true; };
+    });
+  }
+  $("brandName").textContent = S.교회이름;
+
+  /* 히어로 */
+  $("heroEyebrow").textContent = S.영문이름 || "";
+  $("heroTitle").textContent = S.한줄소개 || S.교회이름;
+  $("heroLead").textContent = (S.예배안내 && S.예배안내[0])
+    ? S.예배안내[0].이름 + " " + S.예배안내[0].시간 + " · " + (S.주소 || "")
+    : (S.주소 || "");
+
+  const cta = [];
+  const first = (S.주보 || [])[0];
+  if (first && first.파일) cta.push('<a class="btn btn-solid" href="'+esc(first.파일)+'" target="_blank" rel="noopener">이번 주 주보 보기</a>');
+  if (S.유튜브) cta.push('<a class="btn btn-ghost" href="'+esc(S.유튜브)+'" target="_blank" rel="noopener">유튜브로 예배 보기</a>');
+  $("heroCta").innerHTML = cta.join("");
+
+  /* 예배 안내 */
+  $("worshipList").innerHTML = (S.예배안내 || []).map(w =>
+    '<li><span class="w-name">'+esc(w.이름)+'</span><span class="w-time">'+esc(w.시간)+'</span><span class="w-place">'+esc(w.장소||"")+'</span></li>'
+  ).join("");
+
+  /* 주보 */
+  const fmt = d => {
+    const m = String(d||"").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+    return m ? m[1]+". "+m[2]+". "+m[3] : esc(d||"");
+  };
+  const list = S.주보 || [];
+  if (list.length) {
+    const b = list[0];
+    $("latestSlot").innerHTML =
+      '<div class="latest"><div>'+
+        '<p class="tag">가장 최근 주보</p>'+
+        '<h3>'+esc(b.제목 || "주보")+'</h3>'+
+        '<p class="date">'+fmt(b.날짜)+'</p>'+
+      '</div>'+
+      '<a class="btn btn-pdf" href="'+esc(b.파일)+'" target="_blank" rel="noopener">PDF 열기</a></div>';
+    $("archiveList").innerHTML = list.slice(1).map(x =>
+      '<li><a href="'+esc(x.파일)+'" target="_blank" rel="noopener">'+
+        '<span class="a-date">'+fmt(x.날짜)+'</span>'+
+        '<span class="a-title">'+esc(x.제목 || "주보")+'</span>'+
+        '<span class="a-go">PDF ↗</span></a></li>'
+    ).join("");
+  } else {
+    $("latestSlot").innerHTML = '<p class="empty">등록된 주보가 없습니다.</p>';
+  }
+
+  /* 섬기는 사람들 */
+  $("peopleGrid").innerHTML = (S.섬기는사람들 || []).map(p =>
+    '<div class="person"><p class="p-role">'+esc(p.직분)+'</p>'+
+    '<p class="p-name">'+esc(p.이름)+'</p>'+
+    '<p class="p-duty">'+esc(p.담당||"")+'</p></div>'
+  ).join("");
+
+  /* 오시는 길 */
+  const info = [];
+  if (S.주소) info.push('<dl class="info-block"><dt>주소</dt><dd><a href="https://maps.google.com/?q='+encodeURIComponent(S.주소)+'" target="_blank" rel="noopener">'+esc(S.주소)+'</a></dd></dl>');
+  if (S.주차안내) info.push('<dl class="info-block"><dt>주차</dt><dd>'+esc(S.주차안내)+'</dd></dl>');
+  if (S.전화) info.push('<dl class="info-block"><dt>전화</dt><dd><a href="tel:'+esc(S.전화.replace(/\s/g,""))+'">'+esc(S.전화)+'</a>'+(S.전화안내?' <span style="color:var(--stone);font-size:14px">'+esc(S.전화안내)+'</span>':'')+'</dd></dl>');
+  if (S.이메일) info.push('<dl class="info-block"><dt>이메일</dt><dd><a href="mailto:'+esc(S.이메일)+'">'+esc(S.이메일)+'</a></dd></dl>');
+  $("visitInfo").innerHTML = info.join("");
+  if (S.주소) $("mapFrame").src = "https://www.google.com/maps?q="+encodeURIComponent(S.주소)+"&output=embed";
+
+  /* 푸터 */
+  $("footName").textContent = S.교회이름;
+  $("footTagline").textContent = S.한줄소개 || "";
+  const fc = [];
+  if (S.주소) fc.push('<p>'+esc(S.주소)+'</p>');
+  if (S.전화) fc.push('<p><a href="tel:'+esc(S.전화.replace(/\s/g,""))+'">'+esc(S.전화)+'</a>'+(S.전화안내?' ('+esc(S.전화안내)+')':'')+'</p>');
+  if (S.이메일) fc.push('<p><a href="mailto:'+esc(S.이메일)+'">'+esc(S.이메일)+'</a></p>');
+  $("footContact").innerHTML = fc.join("");
+
+  const sns = [];
+  if (S.유튜브) sns.push('<a href="'+esc(S.유튜브)+'" target="_blank" rel="noopener">YouTube ↗</a>');
+  if (S.인스타그램) sns.push('<a href="'+esc(S.인스타그램)+'" target="_blank" rel="noopener">Instagram ↗</a>');
+  if (S.페이스북) sns.push('<a href="'+esc(S.페이스북)+'" target="_blank" rel="noopener">Facebook ↗</a>');
+  $("socialRow").innerHTML = sns.join("");
+  $("footCopy").textContent = "© " + new Date().getFullYear() + " " + (S.영문이름 || S.교회이름);
+
+  /* 스크롤 등장 */
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+})();
+</script>
+</body>
+</html>
